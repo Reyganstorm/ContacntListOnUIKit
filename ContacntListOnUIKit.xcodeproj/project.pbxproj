@@ -15,6 +15,8 @@
 		E81B900227F840EA00E70258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81B900027F840EA00E70258 /* LaunchScreen.storyboard */; };
 		E81B900A27F8441500E70258 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B900927F8441500E70258 /* DataManager.swift */; };
 		E81B900C27F849DA00E70258 /* Persone.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B900B27F849DA00E70258 /* Persone.swift */; };
+		E81B900E27F853A000E70258 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B900D27F853A000E70258 /* TabBarViewController.swift */; };
+		E81B901027F857BC00E70258 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B900F27F857BC00E70258 /* InformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E81B900327F840EA00E70258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E81B900927F8441500E70258 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E81B900B27F849DA00E70258 /* Persone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persone.swift; sourceTree = "<group>"; };
+		E81B900D27F853A000E70258 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E81B900F27F857BC00E70258 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E81B8FF527F840E900E70258 /* AppDelegate.swift */,
 				E81B8FF727F840E900E70258 /* SceneDelegate.swift */,
 				E81B8FF927F840E900E70258 /* StartingViewController.swift */,
+				E81B900D27F853A000E70258 /* TabBarViewController.swift */,
+				E81B900F27F857BC00E70258 /* InformationViewController.swift */,
 				E81B8FFB27F840E900E70258 /* Main.storyboard */,
 				E81B900927F8441500E70258 /* DataManager.swift */,
 				E81B900B27F849DA00E70258 /* Persone.swift */,
@@ -146,8 +152,10 @@
 			files = (
 				E81B8FFA27F840E900E70258 /* StartingViewController.swift in Sources */,
 				E81B900A27F8441500E70258 /* DataManager.swift in Sources */,
+				E81B901027F857BC00E70258 /* InformationViewController.swift in Sources */,
 				E81B8FF627F840E900E70258 /* AppDelegate.swift in Sources */,
 				E81B900C27F849DA00E70258 /* Persone.swift in Sources */,
+				E81B900E27F853A000E70258 /* TabBarViewController.swift in Sources */,
 				E81B8FF827F840E900E70258 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

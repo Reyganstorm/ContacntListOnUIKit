@@ -8,7 +8,9 @@
 import UIKit
 
 class StartingViewController: UIViewController {
-
+    
+    var persons: [Person]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

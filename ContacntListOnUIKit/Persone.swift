@@ -17,10 +17,8 @@ struct Person {
     }
     let character: String
     let food: String
-}
 
-extension Person {
-    func getPerson() -> [Person] {
+    static func getPersons() -> [Person] {
         var persons: [Person] = []
         
         record.names.shuffle()
@@ -40,3 +38,4 @@ extension Person {
         return persons
     }
 }
+
