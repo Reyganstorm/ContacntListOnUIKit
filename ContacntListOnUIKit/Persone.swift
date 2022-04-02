@@ -7,8 +7,6 @@
 
 import Foundation
 
-var record = DataManager.init()
-
 struct Person {
     let name: String
     let number: String
@@ -21,17 +19,18 @@ struct Person {
     static func getPersons() -> [Person] {
         var persons: [Person] = []
         
-        record.names.shuffle()
-        record.numbers.shuffle()
-        record.signs.shuffle()
-        record.lovelyFood.shuffle()
+        var names = DataManager.shared.names.shuffled()
+        var numbers = DataManager.shared.numbers.shuffled()
+        var signs = DataManager.shared.signs.shuffled()
+        var loveFood = DataManager.shared.lovelyFood.shuffled()
         
-        for _ in 0...record.names.count - 2 {
+        for _ in 0..<names.count {
             let person = Person(
-                name: record.names.removeFirst(),
-                number: record.numbers.removeFirst(),
-                character: record.signs.removeFirst(),
-                food: record.lovelyFood.removeFirst())
+                name: names.removeFirst(),
+                number: numbers.removeFirst(),
+                character: signs.removeFirst(),
+                food: loveFood.removeFirst()
+            )
             persons.append(person)
         }
         

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StartingViewController: UITableViewController {
+class StartingViewController: UIViewController {
     
     var persons: [Person]!
 
@@ -22,20 +22,21 @@ class StartingViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+}
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        10
+extension StartingViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        persons.count
     }
-    /*
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
     }
-     */
   
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "idOfCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        
         let person = persons[indexPath.row]
         
         content.text = person.queueAtTheStore
