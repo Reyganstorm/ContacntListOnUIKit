@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Avatar's Shop turn-->
         <scene sceneID="xDY-DW-Riq">
             <objects>
-                <tableViewController id="dgT-BU-zqZ" sceneMemberID="viewController">
+                <tableViewController id="dgT-BU-zqZ" customClass="StartingViewController" customModule="ContacntListOnUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fiN-Rf-f2i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,19 +31,19 @@
                             <outlet property="delegate" destination="dgT-BU-zqZ" id="hQx-v9-quw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="OtZ-HK-1Xn"/>
+                    <navigationItem key="navigationItem" title="Avatar's Shop turn" id="OtZ-HK-1Xn"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2SU-jP-v23" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946" y="-1103"/>
+            <point key="canvasLocation" x="922" y="-366"/>
         </scene>
-        <!--Item-->
+        <!--Mixed-->
         <scene sceneID="0Hf-vA-WaH">
             <objects>
                 <navigationController id="3WR-be-fm4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="person.3.fill" catalog="system" id="eAa-MW-ifd"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UWC-iK-K0f">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <tabBarItem key="tabBarItem" title="Mixed" image="person.3" catalog="system" selectedImage="person.3.fill" id="eAa-MW-ifd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="UWC-iK-K0f">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -52,23 +52,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfl-If-r4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="59" y="-1103"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="1zw-Sp-Mkb">
-            <objects>
-                <viewController id="2BX-6V-iEd" customClass="InformationViewController" customModule="ContacntListOnUIKit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dQF-zd-FAd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="DXR-Fo-dHe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="doc.on.clipboard.fill" catalog="system" id="gA7-hI-8zh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cBg-Eb-Awr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="35" y="443"/>
+            <point key="canvasLocation" x="35" y="-366"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="z5L-o8-Hm4">
@@ -76,22 +60,40 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yAr-y0-UW9" customClass="TabBarViewController" customModule="ContacntListOnUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AlF-G3-MBl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2BX-6V-iEd" kind="relationship" relationship="viewControllers" id="o74-1k-12e"/>
                         <segue destination="3WR-be-fm4" kind="relationship" relationship="viewControllers" id="By0-v4-GWR"/>
+                        <segue destination="Qlg-mN-Fjx" kind="relationship" relationship="viewControllers" id="4bm-bN-wkH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6pC-cA-lWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1193" y="77"/>
+            <point key="canvasLocation" x="-1109" y="-5"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="cc0-dh-F6k">
+            <objects>
+                <viewController id="Qlg-mN-Fjx" customClass="InformationViewController" customModule="ContacntListOnUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BMk-4o-s41">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iaC-i8-1aV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="More" image="rectangle.and.pencil.and.ellipsis" catalog="system" selectedImage="rectangle.and.pencil.and.ellipsis" id="RsQ-Ze-uAx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rd8-2P-eKa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="364"/>
         </scene>
     </scenes>
     <resources>
-        <image name="doc.on.clipboard.fill" catalog="system" width="116" height="128"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

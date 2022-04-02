@@ -26,7 +26,7 @@ struct Person {
         record.signs.shuffle()
         record.lovelyFood.shuffle()
         
-        for _ in 0...record.names.count {
+        for _ in 0...record.names.count - 2 {
             let person = Person(
                 name: record.names.removeFirst(),
                 number: record.numbers.removeFirst(),

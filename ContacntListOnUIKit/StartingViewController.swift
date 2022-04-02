@@ -24,23 +24,27 @@ class StartingViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        persons.count
+        10
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
     /*
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    }
+     */
+  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        
+        let person = persons[indexPath.row]
+        
+        content.text = person.queueAtTheStore
+        
+        cell.contentConfiguration = content
+        
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
