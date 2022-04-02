@@ -19,8 +19,9 @@ class TabBarViewController: UITabBarController {
         for viewController in viewControllers {
             if let startedVC = viewController as? StartingViewController {
                 startedVC.persons = persons
-            } else if let moreVC = viewController as? InformationViewController {
-                moreVC.persons = persons
+            } else if let navigationVC = viewController as? UINavigationController {
+                let moreVC = navigationVC.topViewController as? InformationViewController
+                moreVC?.persons = persons
             }
         }
     }
