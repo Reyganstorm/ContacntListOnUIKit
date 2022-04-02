@@ -24,24 +24,37 @@ class InfoViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        persons.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        1
     }
 
-    /*
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "identificatorID", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        let person = persons[indexPath.section]
+        
+        content.secondaryText = "Now \(person.character)"
+        content.text = "Want to byu \(person.food)"
+        
+        
+        cell.contentConfiguration = content
+        
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+       // let indexPath = tableView.indexPathForSelectedRow
+        let content = persons[section]
+        
+        return "\(content.name)"
+        
+    }
+  
 
     /*
     // Override to support conditional editing of the table view.
