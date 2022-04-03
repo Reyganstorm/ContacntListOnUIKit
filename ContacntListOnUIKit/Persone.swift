@@ -10,11 +10,15 @@ import Foundation
 struct Person {
     let name: String
     let number: String
+    let character: String
+    let food: String
+    
     var queueAtTheStore: String {
         "\(name) is \(number) turn"
     }
-    let character: String
-    let food: String
+}
+
+extension Person {
 
     static func getPersons() -> [Person] {
         var persons: [Person] = []
