@@ -78,8 +78,6 @@ extension StartingViewController {
     
     
     // MARK: - Navigation
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
             let detailsVC = segue.destination as? DetailsViewController
